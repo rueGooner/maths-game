@@ -2,7 +2,7 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/about">Addition</router-link>
     </div>
     <router-view />
   </div>
@@ -14,10 +14,13 @@
 @import "~bulma/sass/utilities/_all";
 
 // Set your colors
-$primary: #8c67ef;
+$primary: #404040;
 $primary-invert: findColorInvert($primary);
-$twitter: #4099FF;
-$twitter-invert: findColorInvert($twitter);
+$secondary: #8c67ef;
+$info: #00aaff;
+$success: #4BB543;
+$warning: #ffaa00;
+$danger: #d00d00;
 
 // Setup $colors to use as bulma classes (e.g. 'is-twitter')
 $colors: (
@@ -30,7 +33,6 @@ $colors: (
     "success": ($success, $success-invert),
     "warning": ($warning, $warning-invert),
     "danger": ($danger, $danger-invert),
-    "twitter": ($twitter, $twitter-invert)
 );
 
 // Links
@@ -58,7 +60,7 @@ $link-focus-border: $primary;
     color: $primary;
 
     &.router-link-exact-active {
-      color: $twitter;
+      color: lighten($primary, 5%);
     }
   }
 }
