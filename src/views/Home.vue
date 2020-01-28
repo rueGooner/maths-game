@@ -1,18 +1,31 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <GamesView msg="Welcome Ailani" :games="this.renderGames" />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+import GamesView from '@/components/GamesView.vue';
 
 export default {
-  name: "home",
+  name: 'home',
   components: {
-    HelloWorld
-  }
+    GamesView,
+  },
+  data() {
+    return {
+      renderGames: [
+        {
+          name: 'Addition',
+          route: '/addition'
+        },
+        {
+          name: 'Subtraction',
+          route: '/subtraction'
+        }
+      ],
+    };
+  },
 };
 </script>
