@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <div class="container about">
     <div class="column is-full-mobile"><h1>Addition</h1></div>
     <div class="columns is-mobile">
       <div class="column is-third-mobile">
@@ -28,8 +28,5 @@
 </template>
 
 <style lang="scss" scoped>
-.about {
-  width: 90%;
-  margin: 0 auto;
-}
+
 </style>
