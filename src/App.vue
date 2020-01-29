@@ -71,14 +71,16 @@ $link-focus-border: $primary;
 @import '~buefy/src/scss/buefy';
 
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: $primary;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 #nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 30px;
 
   a {
