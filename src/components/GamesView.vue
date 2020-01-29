@@ -1,7 +1,11 @@
 <template>
   <div class="columns">
     <h1>{{ msg }}</h1>
-    <div class="column is-one-quarter-desktop" v-for="(game, gameKey) in games" :key="gameKey">
+    <div
+      class="column is-one-quarter-desktop"
+      v-for="(game, gameKey) in games"
+      :key="gameKey"
+    >
       <router-link :to="game.route">{{ game.name }}</router-link>
     </div>
   </div>
@@ -23,5 +27,4 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-</style>
+<style lang="scss" scoped></style>

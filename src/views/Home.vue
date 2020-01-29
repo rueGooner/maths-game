@@ -18,12 +18,12 @@ export default {
       renderGames: [
         {
           name: 'Addition',
-          route: '/addition'
+          route: '/addition',
         },
         {
           name: 'Subtraction',
-          route: '/subtraction'
-        }
+          route: '/subtraction',
+        },
       ],
     };
   },

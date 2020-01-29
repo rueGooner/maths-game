@@ -1,5 +1,5 @@
 const initialState = {
-  results: []
+  results: [],
 };
 
 const getters = {};
@@ -10,5 +10,5 @@ export default {
   state: initialState,
   getters,
   actions,
-  mutations
+  mutations,
 };

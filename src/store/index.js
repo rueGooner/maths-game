@@ -1,5 +1,5 @@
-import Vue from "vue";
-import Vuex from "vuex";
+import Vue from 'vue';
+import Vuex from 'vuex';
 import VuexPersistence from 'vuex-persist';
 import addition from './modules/addition';
 
