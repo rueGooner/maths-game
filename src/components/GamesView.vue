@@ -20,8 +20,8 @@ export default {
       default: '',
     },
     games: {
-      type: [Object],
-      default: () => {},
+      type: [Object, Array],
+      default: () => [],
     },
   },
 };
